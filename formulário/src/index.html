@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Padrão HTML COM JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="color: #f4f4f4;">
+    <script src="script.js"> </script>
+    <form action="mailto:teste@gmail.com" method="post" enctype="text/plain" name="cadastro">
+    <p>Por favor, preencha os campos abaixo e depois clique no botão Enviar. Caso necessite apagar os dados, dê um clique no botão Limpar.<br>Muito Obrigado! <br><br><br> </p>
+
+    Nome Completo: <input type="text" name ="Nome" size="35"> <br>
+    
+    Seu e-mail: <input type="text" name ="Email" size="35"><br>
+
+    Sexo: <br>
+    <input type="radio" name="Sexo" value="f"> Feminino <br>
+    <input type="radio" name="Sexo" value="m"> Masculino <br>
+    <input type="radio" name="Sexo" value="o"> Outro <br><br>
+
+    Estado Civil: <br>
+    <input type="radio" name="EstadoCivil" value="s"> Solteiro(a) <br>
+    <input type="radio" name="EstadoCivil" value="c"> Casado(a) <br>
+    <input type="radio" name="EstadoCivil" value="d"> Divorciado(a) <br>
+    <input type="radio" name="EstadoCivil" value="v"> Viúvo(a) <br><br> 
+
+    Bens que possui: <br>
+    <input type="checkbox" name="Bens" value="casa"> Casa <br>
+    <input type="checkbox" name="Bens" value="carro"> Carro <br>
+    <input type="checkbox" name="Bens" value="moto"> Moto <br>
+    <input type="checkbox" name="Bens" value="outros"> Outros <br><br>
+
+    Faixa Etária: <br>
+    <select name="FaixaEtaria">
+        <option value="menos18"> Menos de 18 anos </option>
+        <option value="de18a25"> De 18 a 25 anos </option>
+        <option value="de26a35"> De 26 a 35 anos </option>
+        <option value="de36a45"> De 36 a 45 anos </option>
+        <option value="de46a55"> De 46 a 55 anos </option>
+        <option value="mais55"> Mais de 55 anos </option>
+    </select> <br><br>
+
+    Hobby preferido: <br>
+    <select name="Hobby" size="4" multiple>
+        <option value="ler"> Ler </option>
+        <option value="esportes"> Esportes </option>
+        <option value="cinema"> Cinema </option>
+        <option value="teatro"> Teatro </option>
+        <option value="viajar"> Viajar </option>
+        <option value="dancar"> Dançar </option>
+        <option value="cozinhar"> Cozinhar </option>
+        <option value="jardinagem"> Jardinagem </option>
+        <option value="tocar">Tocar </option>
+    </select>
+    <br><br>
+
+    Observações Gerais: <br>
+    <textarea name="observacoes" rows="5" cols="60"></textarea>
+    <br><br>
+
+    <input type="submit" value="Enviar os dados" onclick="validar();">
+    <input type="reset" value="Limpar os dados">
+
+    </form>
+
+
+</body>
+</html> 
